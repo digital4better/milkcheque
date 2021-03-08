@@ -1,4 +1,4 @@
-# cheques
+# Imprim cheque
 
 ## Project setup
 ```
@@ -19,6 +19,9 @@ yarn build
 ```
 yarn lint
 ```
+
+### External library used
+[written-number](https://github.com/yamadapc/js-written-number)
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

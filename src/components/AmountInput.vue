@@ -1,0 +1,93 @@
+<template>
+  <div class="cheque__form__montant cheque__input__wrapper">
+    <input
+      tabindex="2"
+      v-model="montant"
+      type="text"
+      v-on:input="twoDigitMax"
+      aria-label="entrez le montant du chèque avec maximum deux chiffres après la virgule"
+      oninput="this.value = this.value.replace(/[^0-9,]/g, '')"
+    />
+    <button v-on:click="returnMontant" class="validateBtn">Valider</button>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "AmountInput",
+  data() {
+    return {
+      montant: "0,00"
+    };
+  },
+  methods: {
+    addAsterics(value) {
+      console.log(value)
+      this.montant = `*** ${value} *** `;
+    },
+    twoDigitMax: function() {
+      let amount = this.montant;
+      if (amount.includes(",")) {
+        let str = amount.split(",");
+        if (str.length === 2) {
+          let size = str[1].length > 2 ? 2 : str[1].length;
+          this.montant = str[0] + "," + str[1].substring(0, size);
+        }
+      }
+    },
+    returnMontant: function(e) {
+      e.preventDefault();
+      let amount = this.montant;
+      let isDecimalInAmount = amount.includes(",");
+      this.montant += isDecimalInAmount ? `` : ",00";
+
+      let montantSplit = this.montant.split(",");
+      let montantEuro = montantSplit[0];
+      let montantCentimes = montantSplit[1];
+
+      let writtenNumberLibrary = require("written-number");
+      let writtenEuros = writtenNumberLibrary(montantEuro, { lang: "fr" });
+      let writtenCentimes = writtenNumberLibrary(montantCentimes, {
+        lang: "fr"
+      });
+
+      let writtenCentimesCheck =
+        montantCentimes === "00" ? "" : writtenCentimes;
+      let CentimesPlural = montantCentimes === "01" ? "centime" : "centimes";
+      let EuroPlural = montantEuro === "1" ? "euro" : "euros";
+
+      let writtenNumber = `${writtenEuros} ${EuroPlural}`;
+      writtenNumber += writtenCentimesCheck
+        ? ` et ${writtenCentimesCheck} ${CentimesPlural}`
+        : "";
+
+      this.addAsterics(this.montant);
+      this.$emit("montantLettre", writtenNumber);
+    }
+  }
+};
+</script>
+<style scoped lang="scss">
+.cheque__form__montant {
+  input[type="number"] {
+    width: 41mm;
+    height: 10mm;
+    box-sizing: border-box;
+  }
+  .validateBtn {
+    position: absolute;
+    top: -10mm;
+  }
+}
+@media print {
+  .cheque__form__destinataire {
+    span {
+      display: none;
+    }
+    input[type="text"] {
+      border-bottom: none;
+      font-size: 12px;
+    }
+  }
+}
+</style>

@@ -1,0 +1,244 @@
+.caisse_epargne {
+    position: relative;
+    .cheque__montantLettre {
+      position: absolute;
+      top: calc(20mm - #{$amountText});
+      text-indent: 39mm; //43- 4 de ml
+      left: 4mm;
+      width: 115mm;
+    }
+    .cheque__form__destinataire {
+      position: absolute;
+      left: 4mm;
+      top: calc(34mm - #{$recipient});
+      width: 110mm;
+    }
+    .cheque__form__montant {
+      position: absolute;
+      left: 132mm;
+      top: 24mm;
+    }
+    .cheque__form__ville {
+      position: absolute;
+      left: 132mm;
+      top: calc(40mm - #{$date});
+      input[type="text"] {
+        width: 30mm;
+      }
+    }
+    .cheque__date {
+      position: absolute;
+      left: 132mm;
+      width: 40mm;
+      top: calc(45mm - #{$date});
+    }
+  }
+.bpop {
+position: relative;
+.cheque__montantLettre {
+    position: absolute;
+    top: calc(22mm - #{$amountText});
+    text-indent: 27mm; //31- 4 de ml
+    left: 4mm;
+    width: 115mm;
+}
+.cheque__form__destinataire {
+    position: absolute;
+    left: 4mm;
+    top: calc(34mm - #{$recipient});
+    width: 110mm;
+}
+.cheque__form__montant {
+    position: absolute;
+    left: 133mm;
+    top: 24mm;
+}
+.cheque__form__ville {
+    position: absolute;
+    left: 95mm;
+    top: calc(42mm - #{$date});
+    input[type="text"] {
+    width: 30mm;
+    }
+}
+.cheque__date {
+    position: absolute;
+    left: 133mm;
+    width: 40mm;
+    top: calc(42mm - #{$date});
+}
+}
+.axa {
+  position: relative;
+  .cheque__montantLettre {
+      position: absolute;
+      top: calc(23mm - #{$amountText});
+      text-indent: 38mm; //42- 4 de ml
+      left: 4mm;
+      width: 110mm;
+  }
+  .cheque__form__destinataire {
+      position: absolute;
+      left: 4mm;
+      top: calc(33mm - #{$recipient});
+      width: 104mm;
+  }
+  .cheque__form__montant {
+      position: absolute;
+      left: 133mm;
+      top: 27mm; //(32 - 5)
+  }
+  .cheque__form__ville {
+      position: absolute;
+      left: 85mm;
+      top: calc(40mm - #{$date});
+      input[type="text"] {
+      width: 30mm;
+      }
+  }
+  .cheque__date {
+      position: absolute;
+      left: 131mm;
+      width: 40mm;
+      top: calc(40mm - #{$date});
+  }
+}
+.bnp {
+  position: relative;
+  .cheque__montantLettre {
+      position: absolute;
+      top: calc(22mm - #{$amountText});
+      text-indent: 42mm; //47- 5 de ml
+      left: 5mm;
+      width: 115mm;
+  }
+  .cheque__form__destinataire {
+      position: absolute;
+      left: 5mm;
+      top: calc(28mm - #{$recipient});
+      width: 114mm;
+  }
+  .cheque__form__montant {
+      position: absolute;
+      left: 133mm;
+      top: 27mm; //(32 - 5)
+  }
+  .cheque__form__ville {
+      position: absolute;
+      left: 87mm;
+      top: calc(45mm - #{$date});
+      input[type="text"] {
+      width: 30mm;
+      }
+  }
+  .cheque__date {
+      position: absolute;
+      left: 130mm;
+      width: 40mm;
+      top: calc(45mm - #{$date});
+  }
+}
+.credit_mutuel {
+  position: relative;
+  .cheque__montantLettre {
+      position: absolute;
+      top: calc(21mm - #{$amountText});
+      text-indent: 35mm; //45 - 10 de ml
+      left: 10mm;
+      width: 122mm;
+  }
+  .cheque__form__destinataire {
+      position: absolute;
+      left: 10mm;
+      top: calc(33mm - #{$recipient});
+      width: 107mm;
+  }
+  .cheque__form__montant {
+      position: absolute;
+      left: 133mm;
+      top: 29mm; //(34 - 5)
+  }
+  .cheque__form__ville {
+      position: absolute;
+      left: 133mm;
+      top: calc(42mm - #{$date});
+      input[type="text"] {
+      width: 30mm;
+      }
+  }
+  .cheque__date {
+      position: absolute;
+      left: 133mm;
+      width: 40mm;
+      top: calc(46mm - #{$date});
+  }
+}
+.hsbc {
+  position: relative;
+  .cheque__montantLettre {
+      position: absolute;
+      top: calc(24mm - #{$amountText});
+      left: 5mm;
+      width: 117mm;
+  }
+  .cheque__form__destinataire {
+      position: absolute;
+      left: 5mm;
+      top: calc(34mm - #{$recipient});
+      width: 114mm;
+  }
+  .cheque__form__montant {
+      position: absolute;
+      left: 133mm;
+      top: 27mm; //(32 - 5)
+  }
+  .cheque__form__ville {
+      position: absolute;
+      left: 81mm;
+      top: calc(42mm - #{$date});
+      input[type="text"] {
+        width: 30mm;
+      }
+  }
+  .cheque__date {
+      position: absolute;
+      left: 133mm;
+      width: 40mm;
+      top: calc(42mm - #{$date});
+  }
+}
+.banque_postale {
+  position: relative;
+  .cheque__montantLettre {
+      position: absolute;
+      top: calc(23mm - #{$amountText});
+      text-indent: 40mm; //45 - 5 de ml
+      left: 5mm;
+      width: 110mm;
+  }
+  .cheque__form__destinataire {
+      position: absolute;
+      left: 10mm;
+      top: calc(34mm - #{$recipient});
+      width: 105mm;
+  }
+  .cheque__form__montant {
+      position: absolute;
+      left: 133mm;
+      top: 26mm; //(33 - 5)
+  }
+  .cheque__form__ville {
+      position: absolute;
+      left: 133mm;
+      top: calc(41mm - #{$date});
+      input[type="text"] {
+      width: 30mm;
+      }
+  }
+  .cheque__date {
+      position: absolute;
+      left: 133mm;
+      width: 40mm;
+      top: calc(47mm - #{$date});
+  }
+}
