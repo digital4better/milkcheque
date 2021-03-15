@@ -70,16 +70,25 @@ export default {
 <style scoped lang="scss">
 .cheque__form__montant {
   max-width: 152px;
-  input[type="number"] {
+  input[type="text"] {
     width: 41mm;
-    height: 10mm;
+    // height: 10mm;
     box-sizing: border-box;
     font-size: 14px;
-    max-width: 100%;
   }
   .validateBtn {
     position: absolute;
-    top: -10mm;
+    top: -16mm;
+    color: #fff;
+    background-color: #F15842;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    text-transform: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 5px 10px;
+    margin-top: 20px;
   }
 }
 @media print {
