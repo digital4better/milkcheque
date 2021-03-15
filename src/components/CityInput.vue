@@ -41,6 +41,7 @@ export default {
   input[type="text"] {
     border: none;
     border-bottom: 1px solid #000;
+    font-size: 8px;
     height: $city;
   }
 }

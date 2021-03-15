@@ -69,10 +69,13 @@ export default {
 </script>
 <style scoped lang="scss">
 .cheque__form__montant {
+  max-width: 152px;
   input[type="number"] {
     width: 41mm;
     height: 10mm;
     box-sizing: border-box;
+    font-size: 14px;
+    max-width: 100%;
   }
   .validateBtn {
     position: absolute;

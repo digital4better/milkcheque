@@ -40,7 +40,7 @@ export default {
   input[type="date"] {
     border: none;
     border-bottom: 1px solid #000;
-    font-family: Arial, sans-serif;
+    font-size: 8px;
     height: $date;
     width: 41mm;
   }

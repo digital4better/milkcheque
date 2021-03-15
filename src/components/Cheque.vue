@@ -113,6 +113,19 @@ export default {
 @import "../assets/css/variables.scss";
 @import "../assets/css/banks.scss";
 
+.printBtn {
+  color: #fff;
+  background-color: #F15842;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  text-transform: none;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 11px 30px;
+  height: 50px;
+  margin-top: 20px;
+}
 .cheque {
   &__container {
     background-color: #f0f0f0;

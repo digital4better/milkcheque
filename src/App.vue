@@ -36,12 +36,17 @@ export default {
   }
 }
 #app {
-  font-family: Arial, sans-serif;
+  font-family: Verdana, Tahoma, sans-serif, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  font-size: 12px;
+  font-size: 11px;
+  input[type="text"],
+  input[type="date"],
+  textarea {
+    font-family: Verdana, Tahoma, sans-serif, sans-serif;
+  }
 }
 .container {
   max-width: 1440px;

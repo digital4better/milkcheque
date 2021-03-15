@@ -56,6 +56,7 @@ export default {
     border: none;
     border-bottom: 1px solid #000;
     margin-left: 5px;
+    font-size: 12px;
   }
 }
 @media print {
