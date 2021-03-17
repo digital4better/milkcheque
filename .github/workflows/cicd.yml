@@ -23,9 +23,3 @@ jobs:
           folder: dist
           repository-name: digital4better/digital4better.github.io
           target-folder: cheque
-          dry-run: true
-        
-          
-          
-
-      
