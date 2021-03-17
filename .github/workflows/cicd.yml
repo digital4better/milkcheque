@@ -12,6 +12,8 @@ jobs:
       - uses: actions/setup-node@v2
 
       - name: Build 🛠
+        env:
+          PUBLIC_PATH: cheque
         run: |
           yarn
           yarn build
