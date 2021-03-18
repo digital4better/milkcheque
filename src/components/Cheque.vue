@@ -33,6 +33,7 @@
             v-if="bankList && bankList.length"
             v-model="selected"
             class="cheque__banks select"
+            aria-label="choisissez votre banque"
           >
             <option
               :value="bank.value"
