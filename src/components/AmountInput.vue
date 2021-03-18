@@ -8,7 +8,7 @@
       aria-label="entrez le montant du chèque avec maximum deux chiffres après la virgule"
       oninput="this.value = this.value.replace(/[^0-9,]/g, '')"
     />
-    <button v-on:click="returnMontant" class="validateBtn">Valider</button>
+    <button v-on:click="returnMontant" class="validateBtn" aria-label="valider">Valider</button>
   </div>
 </template>
 
@@ -72,7 +72,7 @@ export default {
   max-width: 152px;
   input[type="text"] {
     width: 41mm;
-    // height: 10mm;
+    height: 10mm;
     box-sizing: border-box;
     font-size: 14px;
   }

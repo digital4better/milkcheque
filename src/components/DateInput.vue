@@ -38,6 +38,7 @@ export default {
   display: flex;
   align-items: center;
   input[type="date"] {
+    background: transparent;
     border: none;
     border-bottom: 1px solid #000;
     font-size: 8px;
