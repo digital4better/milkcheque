@@ -1,5 +1,5 @@
 <template>
-  <div class="cheque__form__ville">
+  <div class="cheque__city">
     <span>À</span>
     <input
       type="text"
@@ -35,7 +35,7 @@ export default {
 <style lang="scss">
 @import "../assets/css/variables.scss";
 
-.cheque__form__ville {
+.cheque__city {
   display: flex;
   align-items: center;
   input[type="text"] {
@@ -47,7 +47,7 @@ export default {
   }
 }
 @media print {
-  .cheque__form__ville {
+  .cheque__city {
     span {
       display: none;
     }

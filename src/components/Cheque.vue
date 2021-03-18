@@ -4,22 +4,20 @@
       <form class="cheque__form" @submit.prevent="handleSubmit">
         <div class="cheque__wrapper">
           <div class="cheque__left">
-            <!-- <div class="cheque__montantLettre__wrapper" id="montantLettreWrapper"> -->
             <textarea
               readonly="true"
               aria-disabled="true"
-              v-if="montantLetter"
-              v-model="montantLetter"
-              class="cheque__montantLettre"
+              v-if="amountLetter"
+              v-model="amountLetter"
+              class="cheque__amountLetter"
               rows="2"
               maxlength="130"
-              id="montantLettre"
+              id="amountLetter"
             >
             </textarea>
-            <!-- </div> -->
             <RecipientInput v-model="recipient" />
           </div>
-          <AmountInput v-on:montantLettre="returnMontant" />
+          <AmountInput v-on:amountLetter="returnMontant" />
         </div>
         <div class="cheque__date__wrapper">
           <CityInput v-model="city" />
@@ -77,7 +75,7 @@ export default {
   },
   data() {
     return {
-      montantLetter: null,
+      amountLetter: null,
       selected: "bpop",
       bankList: [],
       recipient: null,
@@ -87,20 +85,20 @@ export default {
   },
   methods: {
     returnMontant(value) {
-      this.montantLetter = `*** ${value}`;
+      this.amountLetter = `*** ${value}`;
     },
     PrintWindow() {
       window.print();
     }
   },
   updated: function() {
-    if (this.montantLetter) {
+    if (this.amountLetter) {
       let maxLength = document
-        .getElementById("montantLettre")
+        .getElementById("amountLetter")
         .getAttribute("maxlength");
-      let textareaLength = document.getElementById("montantLettre").value.length;
+      let textareaLength = document.getElementById("amountLetter").value.length;
       let asteriskNb = "*".repeat(maxLength - textareaLength);
-      this.montantLetter += ` ${asteriskNb}`;
+      this.amountLetter += ` ${asteriskNb}`;
     }
     this.$emit("datas", this.changedvalue);
   },
@@ -130,7 +128,6 @@ export default {
 .cheque {
   &__container {
     background-color: #f0f0f0;
-    // padding: 20px;
     width: 175mm;
     height: 80mm;
     box-sizing: border-box;
@@ -160,7 +157,7 @@ export default {
     justify-content: space-between;
     align-items: center;
   }
-  &__montantLettre {
+  &__amountLetter {
     text-transform: uppercase;
     text-align: left;
     display: inline-block;
@@ -172,10 +169,6 @@ export default {
     font-size: 9px;
     word-break: break-all;
     line-height: 5mm;
-  }
-  &__montantLettre__wrapper {
-    text-align: left;
-    position: relative;
   }
   &__banks {
     position: absolute;

@@ -1,5 +1,5 @@
 <template>
-  <div class="cheque__form__montant cheque__input__wrapper">
+  <div class="cheque__amount cheque__input__wrapper">
     <input
       tabindex="2"
       v-model="montant"
@@ -8,7 +8,9 @@
       aria-label="entrez le montant du chèque avec maximum deux chiffres après la virgule"
       oninput="this.value = this.value.replace(/[^0-9,]/g, '')"
     />
-    <button v-on:click="returnMontant" class="validateBtn" aria-label="valider">Valider</button>
+    <button v-on:click="returnMontant" class="validateBtn" aria-label="valider">
+      Valider
+    </button>
   </div>
 </template>
 
@@ -22,7 +24,6 @@ export default {
   },
   methods: {
     addAsterics(value) {
-      console.log(value)
       this.montant = `*** ${value} *** `;
     },
     twoDigitMax: function() {
@@ -62,13 +63,13 @@ export default {
         : "";
 
       this.addAsterics(this.montant);
-      this.$emit("montantLettre", writtenNumber);
+      this.$emit("amountLetter", writtenNumber);
     }
   }
 };
 </script>
 <style scoped lang="scss">
-.cheque__form__montant {
+.cheque__amount {
   max-width: 152px;
   input[type="text"] {
     width: 41mm;
@@ -92,7 +93,7 @@ export default {
   }
 }
 @media print {
-  .cheque__form__destinataire {
+  .cheque__amount {
     span {
       display: none;
     }

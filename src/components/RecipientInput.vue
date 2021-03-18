@@ -1,5 +1,5 @@
 <template>
-  <div class="cheque__form__destinataire">
+  <div class="cheque__recipient">
     <span>à</span>
     <input
       type="text"
@@ -47,7 +47,7 @@ export default {
 };
 </script>
 <style scoped lang="scss">
-.cheque__form__destinataire {
+.cheque__recipient {
   display: flex;
   align-items: baseline;
 
@@ -60,7 +60,7 @@ export default {
   }
 }
 @media print {
-  .cheque__form__destinataire {
+  .cheque__recipient {
     span {
       display: none;
     }
