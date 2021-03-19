@@ -168,7 +168,7 @@ export default {
     resize: none;
     font-size: 9px;
     word-break: break-all;
-    line-height: 5mm;
+    line-height: 6mm;
   }
   &__banks {
     position: absolute;

@@ -73,7 +73,7 @@ export default {
   max-width: 152px;
   input[type="text"] {
     width: 41mm;
-    height: 10mm;
+    height: 12mm;
     box-sizing: border-box;
     font-size: 14px;
   }

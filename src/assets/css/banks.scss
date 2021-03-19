@@ -2,7 +2,7 @@
     position: relative;
     .cheque__amountLetter {
       position: absolute;
-      top: calc(20mm - #{$amountText});
+      top: calc(27mm - #{$amountText});
       text-indent: 39mm; //43- 4 de ml
       left: 4mm;
       width: 115mm;
@@ -10,7 +10,7 @@
     .cheque__recipient {
       position: absolute;
       left: 4mm;
-      top: calc(34mm - #{$recipient});
+      top: calc(33mm - #{$recipient});
       width: 110mm;
     }
     .cheque__amount {
@@ -37,7 +37,7 @@
     position: relative;
     .cheque__amountLetter {
         position: absolute;
-        top: calc(22mm - #{$amountText});
+        top: calc(28mm - #{$amountText});
         text-indent: 27mm; //31- 4 de ml
         left: 4mm;
         width: 115mm;
@@ -45,7 +45,7 @@
     .cheque__recipient {
         position: absolute;
         left: 4mm;
-        top: calc(34mm - #{$recipient});
+        top: calc(33mm - #{$recipient});
         width: 110mm;
     }
     .cheque__amount {
@@ -72,7 +72,7 @@
   position: relative;
   .cheque__amountLetter {
       position: absolute;
-      top: calc(23mm - #{$amountText});
+      top: calc(28mm - #{$amountText});
       text-indent: 38mm; //42- 4 de ml
       left: 4mm;
       width: 110mm;
@@ -80,13 +80,13 @@
   .cheque__recipient {
       position: absolute;
       left: 4mm;
-      top: calc(33mm - #{$recipient});
+      top: calc(32mm - #{$recipient});
       width: 104mm;
   }
   .cheque__amount {
       position: absolute;
       left: 133mm;
-      top: 27mm; //(32 - 5)
+      top: 24mm; //(32 - !)
   }
   .cheque__city {
       position: absolute;
@@ -107,7 +107,7 @@
   position: relative;
   .cheque__amountLetter {
       position: absolute;
-      top: calc(22mm - #{$amountText});
+      top: calc(28mm - #{$amountText});
       text-indent: 42mm; //47- 5 de ml
       left: 5mm;
       width: 115mm;
@@ -115,13 +115,13 @@
   .cheque__recipient {
       position: absolute;
       left: 5mm;
-      top: calc(34mm - #{$recipient});
+      top: calc(33mm - #{$recipient});
       width: 114mm;
   }
   .cheque__amount {
       position: absolute;
       left: 133mm;
-      top: 27mm; //(32 - 5)
+      top: 24mm; //(32 - 8)
   }
   .cheque__city {
       position: absolute;
@@ -142,7 +142,7 @@
   position: relative;
   .cheque__amountLetter {
       position: absolute;
-      top: calc(21mm - #{$amountText});
+      top: calc(27mm - #{$amountText});
       text-indent: 35mm; //45 - 10 de ml
       left: 10mm;
       width: 122mm;
@@ -150,13 +150,13 @@
   .cheque__recipient {
       position: absolute;
       left: 10mm;
-      top: calc(33mm - #{$recipient});
+      top: calc(32mm - #{$recipient});
       width: 107mm;
   }
   .cheque__amount {
       position: absolute;
       left: 133mm;
-      top: 29mm; //(34 - 5)
+      top: 26mm; //(34 - 8)
   }
   .cheque__city {
       position: absolute;
@@ -177,20 +177,20 @@
   position: relative;
   .cheque__amountLetter {
       position: absolute;
-      top: calc(24mm - #{$amountText});
+      top: calc(29mm - #{$amountText});
       left: 5mm;
       width: 117mm;
   }
   .cheque__recipient {
       position: absolute;
       left: 5mm;
-      top: calc(34mm - #{$recipient});
+      top: calc(33mm - #{$recipient});
       width: 114mm;
   }
   .cheque__amount {
       position: absolute;
       left: 133mm;
-      top: 27mm; //(32 - 5)
+      top: 24mm; //(32 - 8)
   }
   .cheque__city {
       position: absolute;
@@ -211,7 +211,7 @@
   position: relative;
   .cheque__amountLetter {
       position: absolute;
-      top: calc(23mm - #{$amountText});
+      top: calc(28mm - #{$amountText});
       text-indent: 40mm; //45 - 5 de ml
       left: 5mm;
       width: 110mm;
@@ -219,13 +219,13 @@
   .cheque__recipient {
       position: absolute;
       left: 10mm;
-      top: calc(34mm - #{$recipient});
+      top: calc(33mm - #{$recipient});
       width: 105mm;
   }
   .cheque__amount {
       position: absolute;
       left: 133mm;
-      top: 26mm; //(33 - 5)
+      top: 25mm; //(33 - 8)
   }
   .cheque__city {
       position: absolute;
@@ -246,7 +246,7 @@
     position: relative;
     .cheque__amountLetter {
         position: absolute;
-        top: calc(22mm - #{$amountText});
+        top: calc(28mm - #{$amountText});
         text-indent: 24mm; //30- 6 de ml
         left: 6mm;
         width: 115mm;
@@ -254,13 +254,13 @@
     .cheque__recipient {
         position: absolute;
         left: 6mm;
-        top: calc(34mm - #{$recipient});
+        top: calc(33mm - #{$recipient});
         width: 110mm;
     }
     .cheque__amount {
         position: absolute;
         left: 129mm;
-        top: 27mm; //(32 - 5)
+        top: 24mm; //(32 - 8)
     }
     .cheque__city {
         position: absolute;
@@ -281,20 +281,20 @@
     position: relative;
     .cheque__amountLetter {
         position: absolute;
-        top: calc(21mm - #{$amountText});
+        top: calc(27mm - #{$amountText});
         left: 8mm;
         width: 125mm;
     }
     .cheque__recipient {
         position: absolute;
         left: 8mm;
-        top: calc(33mm - #{$recipient});
+        top: calc(32mm - #{$recipient});
         width: 120mm;
     }
     .cheque__amount {
         position: absolute;
         left: 131mm;
-        top: 27mm; //(32 - 5)
+        top: 24mm; //(32 - 8)
     }
     .cheque__city {
         position: absolute;
@@ -315,7 +315,7 @@
     position: relative;
     .cheque__amountLetter {
         position: absolute;
-        top: calc(21mm - #{$amountText});
+        top: calc(27mm - #{$amountText});
         text-indent: 35mm; //45 - 10 de ml
         left: 10mm;
         width: 116mm;
@@ -323,13 +323,13 @@
     .cheque__recipient {
         position: absolute;
         left: 10mm;
-        top: calc(33mm - #{$recipient});
+        top: calc(32mm - #{$recipient});
         width: 113mm;
     }
     .cheque__amount {
         position: absolute;
         left: 131mm;
-        top: 27mm; //(32 - 5)
+        top: 24mm; //(32 - 8)
     }
     .cheque__city {
         position: absolute;
@@ -350,7 +350,7 @@
     position: relative;
     .cheque__amountLetter {
         position: absolute;
-        top: calc(20mm - #{$amountText});
+        top: calc(27mm - #{$amountText});
         text-indent: 35mm; //40 - 5 de ml
         left: 5mm;
         width: 105mm;
@@ -358,13 +358,13 @@
     .cheque__recipient {
         position: absolute;
         left: 5mm;
-        top: calc(32mm - #{$recipient});
+        top: calc(31mm - #{$recipient});
         width: 110mm;
     }
     .cheque__amount {
         position: absolute;
         left: 132mm;
-        top: 27mm; //(32 - 5)
+        top: 24mm; //(32 - 8)
     }
     .cheque__city {
         position: absolute;
@@ -385,20 +385,20 @@
     position: relative;
     .cheque__amountLetter {
         position: absolute;
-        top: calc(25mm - #{$amountText});
+        top: calc(30mm - #{$amountText});
         left: 5mm;
         width: 117mm;
     }
     .cheque__recipient {
         position: absolute;
         left: 5mm;
-        top: calc(34mm - #{$recipient});
+        top: calc(33mm - #{$recipient});
         width: 115mm;
     }
     .cheque__amount {
         position: absolute;
         left: 134mm;
-        top: 28mm; //(34 - 5)
+        top: 26mm; //(34 - 8)
     }
     .cheque__city {
         position: absolute;
@@ -419,7 +419,7 @@
     position: relative;
     .cheque__amountLetter {
         position: absolute;
-        top: calc(19mm - #{$amountText});
+        top: calc(26mm - #{$amountText});
         text-indent: 22mm; //27 - 5 de ml
         left: 5mm;
         width: 110mm;
@@ -427,13 +427,13 @@
     .cheque__recipient {
         position: absolute;
         left: 5mm;
-        top: calc(32mm - #{$recipient});
+        top: calc(31mm - #{$recipient});
         width: 105mm;
     }
     .cheque__amount {
         position: absolute;
         left: 132mm;
-        top: 27mm; //(32 - 5)
+        top: 24mm; //(32 - 8)
     }
     .cheque__city {
         position: absolute;
@@ -454,7 +454,7 @@
     position: relative;
     .cheque__amountLetter {
         position: absolute;
-        top: calc(22mm - #{$amountText});
+        top: calc(28mm - #{$amountText});
         text-indent: 30mm; //40- 10 de ml
         left: 10mm;
         width: 111mm;
@@ -462,13 +462,13 @@
     .cheque__recipient {
         position: absolute;
         left: 10mm;
-        top: calc(33mm - #{$recipient});
+        top: calc(32mm - #{$recipient});
         width: 108mm;
     }
     .cheque__amount {
         position: absolute;
         left: 135mm;
-        top: 20mm; //(25 - 5)
+        top: 17mm; //(25 - 8)
     }
     .cheque__city {
         position: absolute;
@@ -489,20 +489,20 @@
     position: relative;
     .cheque__amountLetter {
         position: absolute;
-        top: calc(21mm - #{$amountText});
+        top: calc(27mm - #{$amountText});
         left: 5mm;
         width: 115mm;
     }
     .cheque__recipient {
         position: absolute;
         left: 5mm;
-        top: calc(34mm - #{$recipient});
+        top: calc(33mm - #{$recipient});
         width: 114mm;
     }
     .cheque__amount {
         position: absolute;
         left: 135mm;
-        top: 24mm; //(29 - 5)
+        top: 21mm; //(29 - 8)
     }
     .cheque__city {
         position: absolute;
@@ -523,20 +523,20 @@
     position: relative;
     .cheque__amountLetter {
         position: absolute;
-        top: calc(22mm - #{$amountText});
+        top: calc(28mm - #{$amountText});
         left: 10mm;
         width: 112mm;
     }
     .cheque__recipient {
         position: absolute;
         left: 10mm;
-        top: calc(34mm - #{$recipient});
+        top: calc(33mm - #{$recipient});
         width: 114mm;
     }
     .cheque__amount {
         position: absolute;
         left: 133mm;
-        top: 27mm; //(32 - 5)
+        top: 24mm; //(32 - 8)
     }
     .cheque__city {
         position: absolute;
@@ -557,20 +557,20 @@
     position: relative;
     .cheque__amountLetter {
         position: absolute;
-        top: calc(22mm - #{$amountText});
+        top: calc(29mm - #{$amountText});
         left: 8mm;
         width: 114mm;
     }
     .cheque__recipient {
         position: absolute;
         left: 8mm;
-        top: calc(35mm - #{$recipient});
+        top: calc(34mm - #{$recipient});
         width: 112mm;
     }
     .cheque__amount {
         position: absolute;
         left: 130mm;
-        top: 29mm; //(34 - 5)
+        top: 26mm; //(34 - 8)
     }
     .cheque__city {
         position: absolute;
@@ -591,7 +591,7 @@
     position: relative;
     .cheque__amountLetter {
         position: absolute;
-        top: calc(21mm - #{$amountText});
+        top: calc(27mm - #{$amountText});
         text-indent: 82mm; //92- 10 de ml
         left: 6mm;
         width: 115mm;
@@ -599,13 +599,13 @@
     .cheque__recipient {
         position: absolute;
         left: 6mm;
-        top: calc(33mm - #{$recipient});
+        top: calc(32mm - #{$recipient});
         width: 112mm;
     }
     .cheque__amount {
         position: absolute;
         left: 133mm;
-        top: 27mm; //(32 - 5)
+        top: 24mm; //(32 - 8)
     }
     .cheque__city {
         position: absolute;
@@ -626,20 +626,20 @@
     position: relative;
     .cheque__amountLetter {
         position: absolute;
-        top: calc(17mm - #{$amountText});
+        top: calc(25mm - #{$amountText});
         left: 3mm;
         width: 120mm;
     }
     .cheque__recipient {
         position: absolute;
         left: 3mm;
-        top: calc(32mm - #{$recipient});
+        top: calc(31mm - #{$recipient});
         width: 119mm;
     }
     .cheque__amount {
         position: absolute;
         left: 132mm;
-        top: 25mm; //(30 - 5)
+        top: 22mm; //(30 - 8)
     }
     .cheque__city {
         position: absolute;
@@ -660,20 +660,20 @@
     position: relative;
     .cheque__amountLetter {
         position: absolute;
-        top: calc(23mm - #{$amountText});
+        top: calc(29mm - #{$amountText});
         left: 3mm;
         width: 120mm;
     }
     .cheque__recipient {
         position: absolute;
         left: 3mm;
-        top: calc(35mm - #{$recipient});
+        top: calc(34mm - #{$recipient});
         width: 117mm;
     }
     .cheque__amount {
         position: absolute;
         left: 130mm;
-        top: 27mm; //(32 - 5)
+        top: 24mm; //(32 - 8)
     }
     .cheque__city {
         position: absolute;
@@ -694,7 +694,7 @@
     position: relative;
     .cheque__amountLetter {
         position: absolute;
-        top: calc(20mm - #{$amountText});
+        top: calc(28mm - #{$amountText});
         text-indent: 42mm; //47- 5 de ml
         left: 5mm;
         width: 110mm;
@@ -702,13 +702,13 @@
     .cheque__recipient {
         position: absolute;
         left: 5mm;
-        top: calc(34mm - #{$recipient});
+        top: calc(33mm - #{$recipient});
         width: 117mm;
     }
     .cheque__amount {
         position: absolute;
         left: 130mm;
-        top: 29mm; //(34 - 5)
+        top: 26mm; //(34 - 8)
     }
     .cheque__city {
         position: absolute;
@@ -729,7 +729,7 @@
     position: relative;
     .cheque__amountLetter {
         position: absolute;
-        top: calc(17mm - #{$amountText});
+        top: calc(23mm - #{$amountText});
         text-indent: 49mm; //54- 5 de ml
         left: 5mm;
         width: 115mm;
@@ -737,13 +737,13 @@
     .cheque__recipient {
         position: absolute;
         left: 5mm;
-        top: calc(32mm - #{$recipient});
+        top: calc(31mm - #{$recipient});
         width: 110mm;
     }
     .cheque__amount {
         position: absolute;
         left: 130mm;
-        top: 27mm; //(32 - 5)
+        top: 24mm; //(32 - 8)
     }
     .cheque__city {
         position: absolute;
@@ -764,7 +764,7 @@
     position: relative;
     .cheque__amountLetter {
         position: absolute;
-        top: calc(21mm - #{$amountText});
+        top: calc(27mm - #{$amountText});
         text-indent: 19mm; //24- 5 de ml
         left: 5mm;
         width: 107mm;
@@ -772,13 +772,13 @@
     .cheque__recipient {
         position: absolute;
         left: 5mm;
-        top: calc(33mm - #{$recipient});
+        top: calc(32mm - #{$recipient});
         width: 115mm;
     }
     .cheque__amount {
         position: absolute;
         left: 130mm;
-        top: 24mm; //(29 - 5)
+        top: 21mm; //(29 - 9)
     }
     .cheque__city {
         position: absolute;
@@ -799,7 +799,7 @@
     position: relative;
     .cheque__amountLetter {
         position: absolute;
-        top: calc(21mm - #{$amountText});
+        top: calc(27mm - #{$amountText});
         text-indent: 20mm; //25- 5 de ml
         left: 5mm;
         width: 117mm;
@@ -807,13 +807,13 @@
     .cheque__recipient {
         position: absolute;
         left: 5mm;
-        top: calc(33mm - #{$recipient});
+        top: calc(32mm - #{$recipient});
         width: 115mm;
     }
     .cheque__amount {
         position: absolute;
         left: 135mm;
-        top: 23mm; //(28 - 5)
+        top: 20mm; //(28 - 8)
     }
     .cheque__city {
         position: absolute;
@@ -834,7 +834,7 @@
     position: relative;
     .cheque__amountLetter {
         position: absolute;
-        top: calc(23mm - #{$amountText});
+        top: calc(29mm - #{$amountText});
         text-indent: 35mm; //40- 5 de ml
         left: 3mm;
         width: 105mm;
@@ -842,13 +842,13 @@
     .cheque__recipient {
         position: absolute;
         left: 3mm;
-        top: calc(34mm - #{$recipient});
+        top: calc(33mm - #{$recipient});
         width: 97mm;
     }
     .cheque__amount {
         position: absolute;
         left: 133mm;
-        top: 27mm; //(32 - 5)
+        top: 24mm; //(32 - 8)
     }
     .cheque__city {
         position: absolute;
